@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Fee Refund: A Strategic Imperative</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #002046;
+        }
+        .times-headline {
+            font-weight: 900;
+            letter-spacing: -0.025em;
+        }
+        .stat-number {
+            font-weight: 900;
+            font-size: 4rem;
+            line-height: 1;
+            color: #f0b323;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+        }
+        .section-card {
+            background-color: #002d62;
+            border-radius: 1rem;
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            overflow: hidden;
+        }
+        .text-on-dark {
+            color: #e2e8f0;
+        }
+        .sub-text-on-dark {
+            color: #a0aec0;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            height: 20rem;
+            max-width: 24rem;
+            max-height: 20rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .flow-step {
+            background-color: #002d62;
+            border: 2px solid #005786;
+            border-radius: 0.75rem;
+            padding: 1rem;
+            text-align: center;
+            flex: 1;
+            min-width: 150px;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+        .flow-arrow {
+            font-size: 2rem;
+            color: #a0aec0;
+            align-self: center;
+        }
+    </style>
+</head>
+<body class="antialiased text-on-dark">
+    <main class="max-w-5xl mx-auto p-4 md:p-8">
+
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-on-dark times-headline">A Strategic Imperative: Transforming the Fee Refund Experience</h1>
+            <p class="mt-4 text-lg sub-text-on-dark max-w-3xl mx-auto">An investment to enhance customer trust, drive operational efficiency, and protect our bottom line.</p>
+        </header>
+
+        <section class="section-card grid md:grid-cols-2 gap-8 items-center">
+            <div class="text-center md:text-left">
+                <h2 class="text-3xl font-bold text-on-dark">The Problem: A Broken Process Eroding Trust</h2>
+                <p class="mt-4 sub-text-on-dark">Our current non-standard fee refund process is a critical pain point. It requires customers to visit a branch, where bankers face long hold times of **10-20 minutes** on support lines. This inefficient, inconsistent experience frustrates both customers and staff, damaging brand loyalty.</p>
+            </div>
+            <div class="text-center bg-[#002d62] p-8 rounded-lg">
+                <p class="text-lg font-semibold text-on-dark">Non-Standard Refunds Processed (H1 2025)</p>
+                <div class="stat-number mt-2">$11M</div>
+                <p class="mt-2 sub-text-on-dark">A significant operational cost and a direct indicator of systemic service issues that need addressing.</p>
+            </div>
+        </section>
+
+        <section class="section-card grid md:grid-cols-2 gap-8 items-center">
+            <div class="text-center md:text-left">
+                <h2 class="text-3xl font-bold text-on-dark">Projected ROI</h2>
+                <p class="mt-2 sub-text-on-dark">A clear financial case with a projected 3:1 ROI over 5 years.</p>
+                <div class="mt-6 space-y-6">
+                    <div class="text-center md:text-left">
+                        <div class="stat-number text-5xl text-[#f0b323]">$750K</div>
+                        <p class="mt-1 font-semibold text-on-dark">Annual Productivity Savings</p>
+                        <p class="text-sm sub-text-on-dark">From reduced manual refund workload and call center volume.</p>
+                    </div>
+                    <div class="text-center md:text-left">
+                        <div class="stat-number text-5xl text-[#f0b323]">$5-10M</div>
+                        <p class="mt-1 font-semibold text-on-dark">Annual Revenue Preserved</p>
+                        <p class="text-sm sub-text-on-dark">Through improved customer retention and loyalty.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="chart-container">
+                <canvas id="attritionChart"></canvas>
+            </div>
+        </section>
+        
+        <section class="section-card">
+            <h2 class="text-3xl font-bold text-on-dark text-center">The Recommended Solution: Digital First, Data Driven</h2>
+            <p class="mt-4 sub-text-on-dark max-w-3xl mx-auto text-center">Our strategy is a two-pronged approach that combines a modern, self-service digital solution with clear policy improvements. This addresses both the immediate customer experience and the long-term root causes of bank errors.</p>
+            
+            <div class="mt-8">
+                <h3 class="text-xl font-bold text-center text-on-dark mb-4">How It Works: The New Customer Journey</h3>
+                <div class="flex flex-col md:flex-row items-stretch justify-center gap-4 md:gap-2">
+                    <div class="flow-step text-on-dark"><strong>1. Request</strong><p class="text-sm sub-text-on-dark mt-1">Customer initiates refund via app/website using a simple form or AI chatbot.</p></div>
+                    <div class="flow-arrow hidden md:block">&rarr;</div>
+                    <div class="flow-step text-on-dark"><strong>2. Instant Resolve</strong><p class="text-sm sub-text-on-dark mt-1">AI validates request against new, clear policies. Eligible refunds are processed instantly.</p></div>
+                    <div class="flow-arrow hidden md:block">&rarr;</div>
+                    <div class="flow-step text-on-dark"><strong>3. Escalate</strong><p class="text-sm sub-text-on-dark mt-1">Complex cases are automatically routed to a specialized team for quick review.</p></div>
+                    <div class="flow-arrow hidden md:block">&rarr;</div>
+                    <div class="flow-step text-on-dark"><strong>4. Analyze</strong><p class="text-sm sub-text-on-dark mt-1">All data is logged, enabling root cause analysis to prevent future errors systemically.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-card grid md:grid-cols-2 gap-8 items-center">
+            <div class="text-center md:text-left">
+                <h2 class="text-3xl font-bold text-on-dark">Why Now? The Cost of Inaction</h2>
+                <p class="mt-4 sub-text-on-dark">Market pressures and regulatory scrutiny on "junk fees" are intensifying. Fees are a primary driver of customer attrition. Failing to act decisively risks significant market share loss and reputational damage as competitors streamline their own customer service experiences.</p>
+                <p class="mt-4 font-bold text-on-dark">We must lead the market in fairness and transparency to retain our customer base and strengthen our competitive position.</p>
+            </div>
+            <div class="chart-container">
+                <canvas id="costChart"></canvas>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            
+            const chaseColors = ['#002d62', '#005786', '#e2e8f0', '#f0b323', '#d2c161', '#6194d2'];
+
+            const wrapLabel = (label) => {
+                const max_width = 16;
+                if (label.length <= max_width) return label;
+                
+                const words = label.split(' ');
+                let lines = [];
+                let currentLine = '';
+                
+                for (const word of words) {
+                    if ((currentLine + ' ' + word).trim().length > max_width) {
+                        lines.push(currentLine.trim());
+                        currentLine = word;
+                    } else {
+                        currentLine = (currentLine + ' ' + word).trim();
+                    }
+                }
+                if (currentLine) lines.push(currentLine.trim());
+                return lines;
+            };
+
+            const tooltipTitleCallback = (tooltipItems) => {
+                const item = tooltipItems[0];
+                let label = item.chart.data.labels[item.dataIndex];
+                if (Array.isArray(label)) {
+                    return label.join(' ');
+                }
+                return label;
+            };
+
+            const attritionCtx = document.getElementById('attritionChart');
+            if(attritionCtx) {
+                new Chart(attritionCtx, {
+                    type: 'doughnut',
+                    data: {
+                        labels: ['Left or Plan to Leave Due to Fees', 'Remained with Bank'],
+                        datasets: [{
+                            label: 'Customer Attrition due to Fees',
+                            data: [34, 66],
+                            backgroundColor: ['#f0b323', '#a0aec0'],
+                            borderColor: ['#002d62'],
+                            borderWidth: 4,
+                            hoverOffset: 8
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        cutout: '70%',
+                        plugins: {
+                            legend: {
+                                position: 'bottom',
+                                labels: {
+                                    padding: 20,
+                                    font: { size: 12, family: 'Inter' },
+                                    color: '#a0aec0'
+                                }
+                            },
+                            title: {
+                                display: true,
+                                text: 'Over 1/3 of Consumers Leave Banks Over Fees',
+                                font: { size: 14, weight: 'bold', family: 'Inter' },
+                                padding: { top: 10, bottom: 20 },
+                                color: '#e2e8f0'
+                            },
+                            tooltip: { callbacks: { title: tooltipTitleCallback } }
+                        }
+                    }
+                });
+            }
+
+            const costCtx = document.getElementById('costChart');
+            if(costCtx) {
+                const rawLabels = ['IT & Systems', 'Operations & Customer Service', 'Marketing & Comms', 'Change Mgmt & HR', 'Finance & Risk'];
+                const processedLabels = rawLabels.map(wrapLabel);
+
+                new Chart(costCtx, {
+                    type: 'bar',
+                    data: {
+                        labels: processedLabels,
+                        datasets: [{
+                            label: 'Cost in Millions (USD)',
+                            data: [8, 1, 0.75, 0.5, 0.2],
+                            backgroundColor: [
+                                chaseColors[0],
+                                chaseColors[1],
+                                chaseColors[3],
+                                chaseColors[4],
+                                chaseColors[5]
+                            ],
+                            borderRadius: 4,
+                            barThickness: 25
+                        }]
+                    },
+                    options: {
+                        indexAxis: 'y',
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: { display: false },
+                            title: {
+                                display: true,
+                                text: 'Estimated Investment Breakdown (in millions)',
+                                font: { size: 14, weight: 'bold', family: 'Inter' },
+                                color: '#e2e8f0'
+                            },
+                            tooltip: { callbacks: { title: tooltipTitleCallback } }
+                        },
+                        scales: {
+                            x: {
+                                beginAtZero: true,
+                                grid: {
+                                    display: true,
+                                    drawOnChartArea: true,
+                                    drawTicks: false,
+                                    color: '#003f5c'
+                                },
+                                ticks: {
+                                    callback: function(value) { return '$' + value + 'M'; },
+                                    font: { family: 'Inter', color: '#a0aec0' }
+                                }
+                            },
+                            y: {
+                                grid: {
+                                    display: false
+                                },
+                                ticks: {
+                                    font: { family: 'Inter', color: '#e2e8f0' }
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
